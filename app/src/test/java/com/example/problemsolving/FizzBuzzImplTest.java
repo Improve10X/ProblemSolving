@@ -8,7 +8,7 @@ public class FizzBuzzImplTest extends TestCase {
 
     public void testFindFizzBuzz() {
         String expectedOutput ="Buzz";
-        String actualOutput = new FizzBuzzImpl().findFizzBuzz(5);
+        String actualOutput = new FizzBuzzImpl().findFizzBuzz("5");
         assertEquals(expectedOutput, actualOutput);
     }
 }
