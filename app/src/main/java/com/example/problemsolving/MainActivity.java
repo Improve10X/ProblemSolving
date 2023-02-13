@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import com.example.problemsolving.databinding.ActivityMainBinding;
+import com.example.problemsolving.fizzbuzz.FizzBuzzActivity;
 import com.example.problemsolving.hoursminutestoseconds.HoursAndMinToSecActivity;
 import com.example.problemsolving.minutestoseconds.MinutesToSeconds;
 import com.example.problemsolving.threeprogrammers.ThreeProgrammersProblemActivity;
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         handleProgrammersBtn();
         handleMinutesBtn();
         handleHoursBtn();
+        handleFizzBuzzBtn();
     }
 
     private void handleProgrammersBtn() {
@@ -46,6 +48,13 @@ public class MainActivity extends AppCompatActivity {
     private void handleHoursBtn() {
         activityMainBinding.hoursMinToSecBtn.setOnClickListener(v -> {
             Intent intent = new Intent(this, HoursAndMinToSecActivity.class);
+            startActivity(intent);
+        });
+    }
+
+    private void handleFizzBuzzBtn() {
+        activityMainBinding.fizzBuzzBtn.setOnClickListener(v -> {
+            Intent intent = new Intent(this, FizzBuzzActivity.class);
             startActivity(intent);
         });
     }
