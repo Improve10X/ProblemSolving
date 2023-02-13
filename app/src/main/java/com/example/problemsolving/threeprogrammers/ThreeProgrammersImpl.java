@@ -1,6 +1,7 @@
-package com.example.problemsolving;
+package com.example.problemsolving.threeprogrammers;
 
 public class ThreeProgrammersImpl implements ProgrammersController{
+
     @Override
     public int getMaxAndMin(String ps1, String ps2, String ps3) {
         int p1Salary = Integer.parseInt(ps1);

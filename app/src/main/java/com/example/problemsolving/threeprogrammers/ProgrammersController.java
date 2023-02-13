@@ -1,4 +1,4 @@
-package com.example.problemsolving;
+package com.example.problemsolving.threeprogrammers;
 
 public interface ProgrammersController {
     int getMaxAndMin(String ps1, String ps2, String ps3);

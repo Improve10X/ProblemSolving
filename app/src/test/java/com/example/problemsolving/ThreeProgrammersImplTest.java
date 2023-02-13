@@ -1,5 +1,7 @@
 package com.example.problemsolving;
 
+import com.example.problemsolving.threeprogrammers.ThreeProgrammersImpl;
+
 import junit.framework.TestCase;
 
 public class ThreeProgrammersImplTest extends TestCase {

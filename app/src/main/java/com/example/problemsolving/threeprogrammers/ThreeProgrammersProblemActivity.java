@@ -1,4 +1,4 @@
-package com.example.problemsolving;
+package com.example.problemsolving.threeprogrammers;
 
 import androidx.appcompat.app.AppCompatActivity;
 
