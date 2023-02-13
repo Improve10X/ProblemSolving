@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import com.example.problemsolving.databinding.ActivityMainBinding;
+import com.example.problemsolving.minutestoseconds.MinutesToSeconds;
 import com.example.problemsolving.threeprogrammers.ThreeProgrammersProblemActivity;
 
 public class MainActivity extends AppCompatActivity {

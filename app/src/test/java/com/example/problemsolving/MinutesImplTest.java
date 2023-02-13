@@ -1,5 +1,7 @@
 package com.example.problemsolving;
 
+import com.example.problemsolving.minutestoseconds.MinutesImpl;
+
 import junit.framework.TestCase;
 
 public class MinutesImplTest extends TestCase {

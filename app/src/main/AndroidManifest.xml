@@ -13,7 +13,7 @@
         android:theme="@style/Theme.ProblemSolving"
         tools:targetApi="31">
         <activity
-            android:name=".MinutesToSeconds"
+            android:name=".minutestoseconds.MinutesToSeconds"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

@@ -1,4 +1,4 @@
-package com.example.problemsolving;
+package com.example.problemsolving.minutestoseconds;
 
 public class MinutesImpl implements MinutesController{
 

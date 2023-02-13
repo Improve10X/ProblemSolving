@@ -1,9 +1,8 @@
-package com.example.problemsolving;
+package com.example.problemsolving.minutestoseconds;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.text.Editable;
 
 import com.example.problemsolving.databinding.ActivityMinutesToSecondsBinding;
 
