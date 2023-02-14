@@ -10,6 +10,7 @@ import com.example.problemsolving.divisiblebyfive.DivisibleByFiveActivity;
 import com.example.problemsolving.equalityofthreevalues.EqualityOfThreeValuesActivity;
 import com.example.problemsolving.fizzbuzz.FizzBuzzActivity;
 import com.example.problemsolving.hoursminutestoseconds.HoursAndMinToSecActivity;
+import com.example.problemsolving.lessthanhundred.LessThanHundredActivity;
 import com.example.problemsolving.minutestoseconds.MinutesToSeconds;
 import com.example.problemsolving.nthEvenNumber.NthEvenNumberActivity;
 import com.example.problemsolving.threeprogrammers.ThreeProgrammersProblemActivity;
@@ -37,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         handleTwoMakesTen();
         handleEqualityBtn();
         handleEvenBtn();
+        handleHundredBtn();
     }
 
     private void handleProgrammersBtn() {
@@ -91,6 +93,13 @@ public class MainActivity extends AppCompatActivity {
     private void handleEvenBtn() {
         activityMainBinding.evenBtn.setOnClickListener(v -> {
             Intent intent = new Intent(this, NthEvenNumberActivity.class);
+            startActivity(intent);
+        });
+    }
+
+    private void handleHundredBtn() {
+        activityMainBinding.hundredBtn.setOnClickListener(v -> {
+            Intent intent =new Intent(this, LessThanHundredActivity.class);
             startActivity(intent);
         });
     }
