@@ -7,10 +7,13 @@ import android.os.Bundle;
 
 import com.example.problemsolving.databinding.ActivityMainBinding;
 import com.example.problemsolving.divisiblebyfive.DivisibleByFiveActivity;
+import com.example.problemsolving.equalityofthreevalues.EqualityOfThreeValuesActivity;
 import com.example.problemsolving.fizzbuzz.FizzBuzzActivity;
 import com.example.problemsolving.hoursminutestoseconds.HoursAndMinToSecActivity;
 import com.example.problemsolving.minutestoseconds.MinutesToSeconds;
+import com.example.problemsolving.nthEvenNumber.NthEvenNumberActivity;
 import com.example.problemsolving.threeprogrammers.ThreeProgrammersProblemActivity;
+import com.example.problemsolving.twomakesten.TwoMakesTenActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -31,6 +34,9 @@ public class MainActivity extends AppCompatActivity {
         handleHoursBtn();
         handleFizzBuzzBtn();
         handleDivisibleBtn();
+        handleTwoMakesTen();
+        handleEqualityBtn();
+        handleEvenBtn();
     }
 
     private void handleProgrammersBtn() {
@@ -64,6 +70,27 @@ public class MainActivity extends AppCompatActivity {
     private void handleDivisibleBtn() {
         activityMainBinding.divisibleByFiveBtn.setOnClickListener(v -> {
             Intent intent = new Intent(this, DivisibleByFiveActivity.class);
+            startActivity(intent);
+        });
+    }
+
+    private void handleTwoMakesTen() {
+        activityMainBinding.twoMakesTenTxt.setOnClickListener(v -> {
+            Intent intent = new Intent(this, TwoMakesTenActivity.class);
+            startActivity(intent);
+        });
+    }
+
+    private void handleEqualityBtn() {
+        activityMainBinding.equalityThreeBtn.setOnClickListener(v -> {
+            Intent intent = new Intent(this, EqualityOfThreeValuesActivity.class);
+            startActivity(intent);
+        });
+    }
+
+    private void handleEvenBtn() {
+        activityMainBinding.evenBtn.setOnClickListener(v -> {
+            Intent intent = new Intent(this, NthEvenNumberActivity.class);
             startActivity(intent);
         });
     }

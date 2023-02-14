@@ -68,4 +68,42 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/fizz_buzz_btn"
         app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/two_makes_ten_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Two Makes Ten"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divisible_by_five_btn"
+        app:layout_constraintVertical_bias="0.021" />
+
+    <Button
+        android:id="@+id/equality_three_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EqualityOfThreeValues"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/two_makes_ten_txt"
+        app:layout_constraintVertical_bias="0.073" />
+
+    <Button
+        android:id="@+id/even_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Even"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/equality_three_btn"
+        app:layout_constraintVertical_bias="0.136" />
 </androidx.constraintlayout.widget.ConstraintLayout>

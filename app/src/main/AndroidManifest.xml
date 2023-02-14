@@ -13,6 +13,27 @@
         android:theme="@style/Theme.ProblemSolving"
         tools:targetApi="31">
         <activity
+            android:name=".nthEvenNumber.NthEvenNumberActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".equalityofthreevalues.EqualityOfThreeValuesActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".twomakesten.TwoMakesTenActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".divisiblebyfive.DivisibleByFiveActivity"
             android:exported="false">
             <meta-data
