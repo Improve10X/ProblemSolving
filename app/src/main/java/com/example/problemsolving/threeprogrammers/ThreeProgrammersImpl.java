@@ -4,12 +4,16 @@ public class ThreeProgrammersImpl implements ProgrammersController{
 
     @Override
     public int getMaxAndMin(String ps1, String ps2, String ps3) {
-        int p1Salary = Integer.parseInt(ps1);
-        int p2Salary = Integer.parseInt(ps2);
-        int p3Salary = Integer.parseInt(ps3);
-        int max = findMax(p1Salary, p2Salary, p3Salary);
-        int min = findMin(p1Salary, p2Salary, p3Salary);
-        return max -min;
+        try {
+            int p1Salary = Integer.parseInt(ps1);
+            int p2Salary = Integer.parseInt(ps2);
+            int p3Salary = Integer.parseInt(ps3);
+            int max = findMax(p1Salary, p2Salary, p3Salary);
+            int min = findMin(p1Salary, p2Salary, p3Salary);
+            return max - min;
+        } catch (Exception ex) {
+            return -1;
+        }
     }
 
     @Override
