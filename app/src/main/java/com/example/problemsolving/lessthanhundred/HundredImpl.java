@@ -1,9 +1,11 @@
 package com.example.problemsolving.lessthanhundred;
 
+import android.util.Log;
+
 public class HundredImpl implements LessThanHundredController{
+
     @Override
-    public boolean lessThanHundred(String a, String b) {
-        try {
+    public boolean lessThanHundred(String a, String b) throws Exception {
             int inputOne = (Integer.parseInt(a));
             int inputTwo = (Integer.parseInt(b));
             boolean result = false;
@@ -12,8 +14,5 @@ public class HundredImpl implements LessThanHundredController{
                 result = true;
             }
             return result;
-        } catch (Exception ex) {
-            return false;
         }
-    }
 }

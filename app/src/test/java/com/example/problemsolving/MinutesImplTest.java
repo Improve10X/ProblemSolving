@@ -6,7 +6,7 @@ import junit.framework.TestCase;
 
 public class MinutesImplTest extends TestCase {
 
-    public void testConvertMinToSec() {
+    public void testConvertMinToSec() throws Exception{
         int expectedOutput = 60;
         int actualOutput = new MinutesImpl().convertMinToSec("1");
         assertEquals(expectedOutput,actualOutput);

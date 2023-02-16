@@ -1,5 +1,8 @@
 package com.example.problemsolving.twomakesten;
 
+import android.nfc.Tag;
+import android.util.Log;
+
 public class TwoMakesTenImpl implements TwoMakesTenController{
 
     @Override
@@ -13,6 +16,7 @@ public class TwoMakesTenImpl implements TwoMakesTenController{
             }
             return result;
         } catch (Exception ex) {
+            Log.e("TAG", ex.getMessage(), ex);
             return false;
         }
     }

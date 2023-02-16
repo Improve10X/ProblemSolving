@@ -1,5 +1,7 @@
 package com.example.problemsolving.fizzbuzz;
 
+import android.util.Log;
+
 public class FizzBuzzImpl implements FizzBuzzController{
     @Override
     public String findFizzBuzz(String n) {
@@ -15,6 +17,7 @@ public class FizzBuzzImpl implements FizzBuzzController{
             }
             return result;
         } catch (Exception ex) {
+            Log.e("TAG", ex.getMessage(), ex);
             return " " + n;
         }
     }

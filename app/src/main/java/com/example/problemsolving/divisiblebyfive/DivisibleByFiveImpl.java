@@ -1,5 +1,7 @@
 package com.example.problemsolving.divisiblebyfive;
 
+import android.util.Log;
+
 public class DivisibleByFiveImpl implements DivisibilityController{
 
     @Override
@@ -12,6 +14,7 @@ public class DivisibleByFiveImpl implements DivisibilityController{
             }
             return result;
         } catch (Exception ex) {
+            Log.e("TAG", ex.getMessage(), ex);
             return false;
         }
     }

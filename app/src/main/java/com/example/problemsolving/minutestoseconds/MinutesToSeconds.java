@@ -23,8 +23,15 @@ public class MinutesToSeconds extends AppCompatActivity implements MinutesView {
     public void handleConvertBtn() {
         activityMinutesToSecondsBinding.convertMinSecBtn.setOnClickListener(v -> {
             String minutes = activityMinutesToSecondsBinding.minutesTxt.getText().toString();
-            int convert = new MinutesImpl().convertMinToSec(minutes);
-            activityMinutesToSecondsBinding.secondsTxt.setText("The Value is " + convert);
+            int convert = 0;
+            try {
+                convert = new MinutesImpl().convertMinToSec(minutes);
+                activityMinutesToSecondsBinding.secondsTxt.setText("The Value is " + convert);
+            } catch (Exception e) {
+                e.printStackTrace();
+                activityMinutesToSecondsBinding.secondsTxt.setText("Invalid Input");
+            }
+
         });
     }
 }

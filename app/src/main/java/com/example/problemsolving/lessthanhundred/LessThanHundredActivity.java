@@ -25,8 +25,15 @@ public class LessThanHundredActivity extends AppCompatActivity implements LessTh
         lessThanHundredBinding.verificationBtn.setOnClickListener(v -> {
             String inputA = lessThanHundredBinding.inputOneTxt.getText().toString();
             String inputB = lessThanHundredBinding.inputTwoTxt.getText().toString();
-            boolean output = new HundredImpl().lessThanHundred(inputA, inputB);
-            lessThanHundredBinding.outputHundredTxt.setText("The result is " + output);
+            boolean output = false;
+            try {
+                output = new HundredImpl().lessThanHundred(inputA, inputB);
+                lessThanHundredBinding.outputHundredTxt.setText("The result is " + output);
+            } catch (Exception e) {
+                e.printStackTrace();
+                lessThanHundredBinding.outputHundredTxt.setText("Invalid Input");
+            }
+
         });
     }
 }

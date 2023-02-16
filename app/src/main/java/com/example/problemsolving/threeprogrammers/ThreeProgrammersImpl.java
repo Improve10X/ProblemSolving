@@ -1,5 +1,7 @@
 package com.example.problemsolving.threeprogrammers;
 
+import android.util.Log;
+
 public class ThreeProgrammersImpl implements ProgrammersController{
 
     @Override
@@ -12,6 +14,7 @@ public class ThreeProgrammersImpl implements ProgrammersController{
             int min = findMin(p1Salary, p2Salary, p3Salary);
             return max - min;
         } catch (Exception ex) {
+            Log.e("TAG", ex.getMessage(), ex);
             return -1;
         }
     }
