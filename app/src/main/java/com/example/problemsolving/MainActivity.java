@@ -8,6 +8,7 @@ import android.os.Bundle;
 import com.example.problemsolving.databinding.ActivityMainBinding;
 import com.example.problemsolving.divisiblebyfive.DivisibleByFiveActivity;
 import com.example.problemsolving.equalityofthreevalues.EqualityOfThreeValuesActivity;
+import com.example.problemsolving.findbomb.FindBombActivity;
 import com.example.problemsolving.fizzbuzz.FizzBuzzActivity;
 import com.example.problemsolving.hoursminutestoseconds.HoursAndMinToSecActivity;
 import com.example.problemsolving.lessthanhundred.LessThanHundredActivity;
@@ -39,11 +40,19 @@ public class MainActivity extends AppCompatActivity {
         handleEqualityBtn();
         handleEvenBtn();
         handleHundredBtn();
+        handleBombBtn();
     }
 
     private void handleProgrammersBtn() {
         activityMainBinding.threeProgramBtn.setOnClickListener(view -> {
             Intent intent = new Intent(this, ThreeProgrammersProblemActivity.class);
+            startActivity(intent);
+        });
+    }
+
+    private void handleBombBtn() {
+        activityMainBinding.bombMainBtn.setOnClickListener(v -> {
+            Intent intent = new Intent(this, FindBombActivity.class);
             startActivity(intent);
         });
     }
