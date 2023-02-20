@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import com.example.problemsolving.databinding.ActivityMainBinding;
+import com.example.problemsolving.discount.DiscountActivity;
 import com.example.problemsolving.divisiblebyfive.DivisibleByFiveActivity;
 import com.example.problemsolving.equalityofthreevalues.EqualityOfThreeValuesActivity;
 import com.example.problemsolving.findbomb.FindBombActivity;
@@ -41,6 +42,14 @@ public class MainActivity extends AppCompatActivity {
         handleEvenBtn();
         handleHundredBtn();
         handleBombBtn();
+        handleDiscountBtn();
+    }
+
+    private void handleDiscountBtn() {
+        activityMainBinding.findDiscountBtn.setOnClickListener(v -> {
+            Intent intent = new Intent(this, DiscountActivity.class);
+            startActivity(intent);
+        });
     }
 
     private void handleProgrammersBtn() {
