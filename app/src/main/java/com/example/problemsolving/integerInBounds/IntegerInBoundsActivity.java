@@ -18,13 +18,20 @@ public class IntegerInBoundsActivity extends AppCompatActivity implements Intege
         handleVerifyBtn();
     }
 
-
     @Override
     public void handleVerifyBtn() {
-        String number = integerInBoundsBinding.nInputTxt.getText().toString();
-        String lower = integerInBoundsBinding.lowerBondsInputTxt.getText().toString();
-        String upper = integerInBoundsBinding.upperBondsTxt.getText().toString();
-            boolean output = new IntegerInBoundsImpl().withInBounds(number, lower, upper);
-            integerInBoundsBinding.outputIntegerTxt.setText("The result is " + output);
-        }
+        integerInBoundsBinding.verifyIntegerBtn.setOnClickListener(v -> {
+            String number = integerInBoundsBinding.nInputTxt.getText().toString();
+            String lower = integerInBoundsBinding.lowerBondsInputTxt.getText().toString();
+            String upper = integerInBoundsBinding.upperBondsTxt.getText().toString();
+            boolean output = false;
+            try {
+                output = new IntegerInBoundsImpl().withInBounds(number, lower, upper);
+                integerInBoundsBinding.outputIntegerTxt.setText("The result is " + output);
+            } catch (Exception e) {
+                e.printStackTrace();
+                integerInBoundsBinding.outputIntegerTxt.setText("Invalid Input");
+            }
+        });
+    }
 }

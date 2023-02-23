@@ -24,6 +24,8 @@
                 android:id="@+id/hours_min_to_sec_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
                 android:text="HoursAndMinutesToSeconds"
                 android:textAllCaps="false" />
 
@@ -31,6 +33,8 @@
                 android:id="@+id/three_program_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
                 android:text="3 Programmers Problem"
                 android:textAllCaps="false" />
 
@@ -38,6 +42,8 @@
                 android:id="@+id/convert_min_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
                 android:text="Convert Minutes to seconds"
                 android:textAllCaps="false" />
 
@@ -45,7 +51,8 @@
                 android:id="@+id/divisible_by_five_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="18dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
                 android:text="Divisible By Five"
                 android:textAllCaps="false" />
 
@@ -53,6 +60,8 @@
                 android:id="@+id/fizz_buzz_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
                 android:text="FizzBuzz"
                 android:textAllCaps="false" />
 
@@ -60,7 +69,8 @@
                 android:id="@+id/two_makes_ten_txt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
                 android:text="Two Makes Ten"
                 android:textAllCaps="false" />
 
@@ -68,39 +78,48 @@
                 android:id="@+id/equality_three_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
                 android:text="EqualityOfThreeValues" />
 
             <Button
                 android:id="@+id/integer_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
                 android:text="Integer" />
 
             <Button
                 android:id="@+id/bomb_main_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
                 android:text="Bomb" />
 
             <Button
                 android:id="@+id/even_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
                 android:text="Even" />
 
             <Button
                 android:id="@+id/hundred_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="17dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
                 android:text="Hundred" />
 
             <Button
                 android:id="@+id/find_discount_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="3dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
                 android:text="Discount" />
         </LinearLayout>
     </ScrollView>
