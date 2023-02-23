@@ -12,6 +12,7 @@ import com.example.problemsolving.equalityofthreevalues.EqualityOfThreeValuesAct
 import com.example.problemsolving.findbomb.FindBombActivity;
 import com.example.problemsolving.fizzbuzz.FizzBuzzActivity;
 import com.example.problemsolving.hoursminutestoseconds.HoursAndMinToSecActivity;
+import com.example.problemsolving.integerInBounds.IntegerInBoundsActivity;
 import com.example.problemsolving.lessthanhundred.LessThanHundredActivity;
 import com.example.problemsolving.minutestoseconds.MinutesToSeconds;
 import com.example.problemsolving.nthEvenNumber.NthEvenNumberActivity;
@@ -43,6 +44,14 @@ public class MainActivity extends AppCompatActivity {
         handleHundredBtn();
         handleBombBtn();
         handleDiscountBtn();
+        handleIntegerBtn();
+    }
+
+    private void handleIntegerBtn() {
+        activityMainBinding.integerBtn.setOnClickListener(v -> {
+            Intent intent = new Intent(this, IntegerInBoundsActivity.class);
+            startActivity(intent);
+        });
     }
 
     private void handleDiscountBtn() {

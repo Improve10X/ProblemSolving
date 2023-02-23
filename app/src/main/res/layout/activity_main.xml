@@ -6,135 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/three_program_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="3 Programmers Problem"
-        android:textAllCaps="false"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023" />
-
-    <Button
-        android:id="@+id/convert_min_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Convert Minutes to seconds"
-        android:textAllCaps="false"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/three_program_btn"
-        app:layout_constraintVertical_bias="0.025" />
-
-    <Button
-        android:id="@+id/hours_min_to_sec_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="HoursAndMinutesToSeconds"
-        android:textAllCaps="false"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/convert_min_btn"
-        app:layout_constraintVertical_bias="0.019" />
-
-    <Button
-        android:id="@+id/fizz_buzz_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="FizzBuzz"
-        android:textAllCaps="false"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/hours_min_to_sec_btn"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Button
-        android:id="@+id/divisible_by_five_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="18dp"
-        android:text="Divisible By Five"
-        android:textAllCaps="false"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fizz_buzz_btn"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Button
-        android:id="@+id/two_makes_ten_txt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="Two Makes Ten"
-        android:textAllCaps="false"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divisible_by_five_btn"
-        app:layout_constraintVertical_bias="0.021" />
-
-    <Button
-        android:id="@+id/equality_three_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="EqualityOfThreeValues"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/two_makes_ten_txt"
-        app:layout_constraintVertical_bias="0.073" />
-
-    <Button
-        android:id="@+id/even_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Even"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/equality_three_btn"
-        app:layout_constraintVertical_bias="0.136" />
-
-    <Button
-        android:id="@+id/hundred_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="17dp"
-        android:text="Hundred"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/even_btn"
-        app:layout_constraintVertical_bias="0.013" />
-
-    <Button
-        android:id="@+id/bomb_main_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Bomb"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/hundred_btn"
-        app:layout_constraintVertical_bias="0.159" />
-
     <ScrollView
-        android:layout_width="11dp"
-        android:layout_height="721dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.992"
@@ -143,18 +17,92 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" />
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/hours_min_to_sec_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HoursAndMinutesToSeconds"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/three_program_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 Programmers Problem"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/convert_min_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Convert Minutes to seconds"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/divisible_by_five_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="Divisible By Five"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/fizz_buzz_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FizzBuzz"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/two_makes_ten_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Two Makes Ten"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/equality_three_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EqualityOfThreeValues" />
+
+            <Button
+                android:id="@+id/integer_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="Integer" />
+
+            <Button
+                android:id="@+id/bomb_main_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bomb" />
+
+            <Button
+                android:id="@+id/even_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Even" />
+
+            <Button
+                android:id="@+id/hundred_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:text="Hundred" />
+
+            <Button
+                android:id="@+id/find_discount_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="Discount" />
+        </LinearLayout>
     </ScrollView>
 
-    <Button
-        android:id="@+id/find_discount_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="3dp"
-        android:text="Discount"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bomb_main_btn" />
 </androidx.constraintlayout.widget.ConstraintLayout>
